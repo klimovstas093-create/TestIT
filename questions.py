@@ -1,7 +1,7 @@
 #код Климова Станислава
-question_1 = "Какой тип данных используется для хранения целых чисел в Python?\n1. float\n2. str\n3. int\n4. list\n#3"
+question_1 = "Какой тип данных используется для хранения целых чисел в Python?\n1.float\n2.str\n3.int\n4.list\n#3"
 
-question_2 = "Какой оператор используется для проверки равенства в Python?\n1. =\n2. ==\n3. !=\n4. >>\n#2"
+question_2 = "Какой оператор используется для проверки равенства в Python?\n1.=\n2.==\n3.!=\n4.>>\n#2"
 
 question_3 = "Как создать класс с названием Test в Python?\n1.class Test\n2.Class(Test)\n3.Test.Class()\n4.Class.Test()\т#1"
 
