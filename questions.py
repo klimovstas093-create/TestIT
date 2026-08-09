@@ -1,5 +1,4 @@
 #Код Климова Станислава
-from random import shuffle
 question_1 = "Какой тип данных используется для хранения целых чисел в python?:\n1. float\n2. str\n3. int\n4. list\n#3"
 
 question_2 = "Какой оператор используется для проверки равенства в python?:\n1. =\n2. ==\n3. !=\n4. >>\n#2"
@@ -10,4 +9,4 @@ question_4 = "Как создать список в python?:\n1.set()\n2.tuple()
 
 question_5 = "Что делает .lower() в python?\n1.Удаляет пробелы\n2.Делает первую букву заглавной\n3.Переводит все буквы в нижний регистр\n4.Разбивает строку на части\n#3"
 
-questions = shuffle([question_1, question_2, question_3, question_4, question_5])
+questions = {question_1, question_2, question_3, question_4, question_5}
