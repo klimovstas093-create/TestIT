@@ -1,5 +1,6 @@
-def testing(answer:str):
-    parts = answer.split("#")
+#Код Бабошина Максима
+def testing(question):
+    parts = question.split("#")
     print(parts[0])
     if input() == parts[1]:
         return 1
