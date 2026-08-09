@@ -1,5 +1,5 @@
 #Должен был быть код Кроткова Льва
-from time import time, sleed
+from time import time, sleep
 from questions import questions
 from test import *
 
