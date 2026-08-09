@@ -1,3 +1,4 @@
+#Должен был быть код Кроткова Льва
 from time import time
 from questions import questions
 from test import *
