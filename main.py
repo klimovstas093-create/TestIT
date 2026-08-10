@@ -20,7 +20,7 @@ def start():
             print("Время закончилось")
             raise SystemExit()
         
-threading.Thread(target=start, daemon=True)
+threading.Thread(target=start, daemon=True).start()
 
 for i in questions:
     score += testing(i)
