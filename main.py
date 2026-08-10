@@ -11,10 +11,10 @@ end = False
 def start():
     print(name + 'У вас есть 60 секунд на прохождение теста')
     while not end:
-        current_time = time.time()
+        current_time = time()
         process_time = current_time - start_time
         print(f'{name}, прошло {process_time:.2f} секунд')
-        time.sleep(5)
+        sleep(5)
     
         if process_time > 60:
             print("Время закончилось")
