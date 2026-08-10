@@ -1,6 +1,6 @@
 #код Фролова и Климова
 from time import time, sleep
-import threading
+import threading, sys
 from questions import questions
 from test import *
 
@@ -9,16 +9,17 @@ name = input("Введите ваше имя: ")
 end = False
 
 def start():
-    print(name + 'У вас есть 60 секунд на прохождение теста')
+    start_time = time()
+    print(f'{name}, У вас есть 60 секунд на прохождение теста')
     while not end:
         current_time = time()
         process_time = current_time - start_time
-        print(f'{name}, прошло {process_time:.2f} секунд')
+        print(f'{name}, прошло {int(process_time)} секунд')
         sleep(5)
     
         if process_time > 60:
             print("Время закончилось")
-            raise SystemExit()
+            sys.exit()
         
 threading.Thread(target=start, daemon=True).start()
 
