@@ -1,4 +1,4 @@
-#код Фролова и Климова
+#код Фролова
 from time import time, sleep
 import threading, sys
 from questions import questions
@@ -19,12 +19,14 @@ def start():
     
         if process_time > 60:
             print("Время закончилось")
-            sys.exit()
+            break
         
 threading.Thread(target=start, daemon=True).start()
 
 for i in questions:
     score += testing(i)
+    if round(time()-start) > 60:
+        sys.exit()
 
-print(f"{name}\nВремя прохождения теста: {round(time()-start)} сек\nНабранно баллов: {score}\n{get_result(score)}")
+print(f"{name}\nВремя прохождения теста: {round(time()-start) сек\nНабранно баллов: {score}\n{get_result(score)}")
 
